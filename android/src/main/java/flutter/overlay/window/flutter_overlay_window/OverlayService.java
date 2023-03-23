@@ -313,7 +313,7 @@ public class OverlayService extends Service implements View.OnTouchListener {
                         mTrayAnimationTimer = new Timer();
                         mTrayAnimationTimer.schedule(mTrayTimerTask, 0, 25);
                     }
-                    return dragging;
+                    return false;
                 default:
                     return false;
             }
